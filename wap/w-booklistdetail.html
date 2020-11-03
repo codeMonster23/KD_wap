@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" type="text/css" href="../css/public.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/wap.css" />
+        <script type="text/javascript" src="../js/flexible.js" ></script>
+        <script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>预览</title> 
+		<script>
+/iPad/i.test(navigator.userAgent)&&(head=document.getElementsByTagName('head'),viewport=document.createElement('meta'),viewport.name='viewport',viewport.content='target-densitydpi=device-dpi, width=480px, user-scalable=no',head.length>0&&head[head.length-1].appendChild(viewport));
+        </script>
+	</head>
+	<body style="background-color: #ffffff;">
+     <!--fixbar-->
+     <a href="#" class="ad1">
+         <p class="p1">万选阅读</p>
+         <p class="p2">精致你的时光</p>
+     </a>
+     <!--fixbar  end-->
+     <div class="bookList">
+        <div class="cover">
+            <img class="coverImg" src="../images/pic.jpg" alt="">
+            <div class="total"><span class="t1">710</span>丨<span class="t2">810</span></div>
+        </div>
+        <ul class="clearfix">
+            <li>
+                <!-- 默认封面 -->
+                <a href=""><img src="../images/book_default_cover.png" alt=""></a>
+                <p class="tit"><a href="">半小时漫画明史</a></p>
+            </li>
+            <li>
+                <a href=""><img src="../images/pic.jpg" alt=""></a>
+                <p class="tit"><a href="">半小时漫画明史半小时漫画明史半小时漫画明史</a></p>
+            </li>
+            <li>
+                <a href=""><img src="../images/pic.jpg" alt=""></a>
+                <p class="tit"><a href="">半小时漫画明史半小时漫画明史半小时漫画明史</a></p>
+            </li>
+            <li>
+                <a href=""><img src="../images/pic.jpg" alt=""></a>
+                <p class="tit"><a href="">半小时漫画明史半小时漫画明史半小时漫画明史</a></p>
+            </li>
+            <li>
+                <a href=""><img src="../images/pic.jpg" alt=""></a>
+                <p class="tit"><a href="">半小时漫画明史半小时漫画明史半小时漫画明史</a></p>
+            </li>
+            <li>
+                <a href=""><img src="../images/pic.jpg" alt=""></a>
+                <p class="tit"><a href="">半小时漫画明史半小时漫画明史半小时漫画明史</a></p>
+            </li>
+            <li>
+                <a href=""><img src="../images/pic.jpg" alt=""></a>
+                <p class="tit"><a href="">半小时漫画明史半小时漫画明史半小时漫画明史</a></p>
+            </li>
+            <li>
+                <a href=""><img src="../images/pic.jpg" alt=""></a>
+                <p class="tit"><a href="">半小时漫画明史半小时漫画明史半小时漫画明史</a></p>
+            </li>
+            <li>
+                <a href=""><img src="../images/pic.jpg" alt=""></a>
+                <p class="tit"><a href="">半小时漫画明史半小时漫画明史半小时漫画明史</a></p>
+            </li>
+            <li>
+                <a href=""><img src="../images/pic.jpg" alt=""></a>
+                <p class="tit"><a href="">半小时漫画明史半小时漫画明史半小时漫画明史</a></p>
+            </li>
+            <li>
+                <a href=""><img src="../images/pic.jpg" alt=""></a>
+                <p class="tit"><a href="">半小时漫画明史半小时漫画明史半小时漫画明史</a></p>
+            </li>
+            <li>
+                <!-- 默认封面 -->
+                <a href=""><img src="../images/book_default_cover.png" alt=""></a>
+                <p class="tit"><a href="">半小时漫画明史</a></p>
+            </li>
+        </ul>
+        <a href="" class="more">更多书单 >></a>
+        <!-- 全部加载 -->
+        <div class="line"><span>已全部加载</span></div>
+     </div>
+	 <div class="footer">©2020中国知网（CNKI）</div>
+	 <script>
+	      //判断内容与窗口高度关系
+         var bodyH=$(document.body).height()
+         var winH=$(window).height()
+         console.log(bodyH,winH)
+         if(winH>bodyH || winH==bodyH){
+             $('.footer').addClass('fixed')
+         }
+         else{
+             $('.footer').removeClass('fixed')
+         }
+	     //判断广告显示
+//      $(window).scroll(function(){
+//        var height=$(window).scrollTop()
+//        var b1=$("header").height()
+//        var b2=$(window).height()/4
+//        if(height<b1){
+//            $(".ad1").removeClass("fix h")  
+//            $(".ad2").removeClass("h")
+//        }
+//        if(height>b1 && height<b2){
+//            $(".ad1").addClass("fix")
+//            $(".ad1").removeClass("h")
+//            $(".ad2").removeClass("h")
+//            
+//        }
+//        if(height>b2){
+//            $(".ad1").addClass("h")
+//            $(".ad2").addClass("h")
+//            
+//        }
+//      })
+        
+        
+    </script>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="../css/public.css" />
+    <link rel="stylesheet" type="text/css" href="../css/wap.css" />
+    <script type="text/javascript" src="../js/flexible.js"></script>
+    <script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <title>预览</title>
+    <script>
+        /iPad/i.test(navigator.userAgent) && (head = document.getElementsByTagName('head'), viewport = document.createElement(
+                'meta'), viewport.name = 'viewport', viewport.content =
+            'target-densitydpi=device-dpi, width=7.5rem, user-scalable=no', head.length > 0 && head[head.length - 1]
+            .appendChild(viewport));
+    </script>
+</head>
+
+<body style="background-color: #ffffff;">
+    <!--fixbar-->
+    <a href="#" class="ad1">
+        <p class="p1">万选阅读</p>
+        <p class="p2">精致你的时光</p>
+    </a>
+    <!--fixbar  end-->
+    <div class="booklist-banner"></div>
+    <div class="booklist-main">
+        <div class="booklist-navs clearfix">
+            <span class="selected">全部书单</span>
+            <span>文学</span>
+            <span>历史</span>
+            <span>旅行</span>
+            <span>生活</span>
+            <span>成功励志</span>
+            <span>成功励志</span>
+            <span>成功励志</span>
+            <span>成功励志</span>
+            <span>成功励志</span>
+        </div>
+        <div class="booklist-items clearfix">
+            <div class="booklist-item">
+                <a href="" title="" target="_blank">
+                    <img src="../images/demo.jpg" alt="">
+                </a>
+                <p class="booklist-item-title">
+                    <a href="" title="" target="_blank">读懂自己，活出高境界的人生</a>
+                </p>
+                <div class="booklist-item-numbers">
+                    <span class="booklist-works-number">9</span>
+                    <div class="line"></div>
+                    <span class="booklist-view-number">361</span>
+                </div>
+            </div>
+            <div class="booklist-item">
+                <a href="" title="" target="_blank">
+                    <img src="../images/demo.jpg" alt="">
+                </a>
+                <p class="booklist-item-title">
+                    <a href="" title="" target="_blank">读懂自己，活出高境界的人生</a>
+                </p>
+                <div class="booklist-item-numbers">
+                    <span class="booklist-works-number">9</span>
+                    <div class="line"></div>
+                    <span class="booklist-view-number">361</span>
+                </div>
+            </div>
+            <div class="booklist-item">
+                <a href="" title="" target="_blank">
+                    <img src="../images/demo.jpg" alt="">
+                </a>
+                <p class="booklist-item-title">
+                    <a href="" title="" target="_blank">读懂自己，活出高境界的人生</a>
+                </p>
+                <div class="booklist-item-numbers">
+                    <span class="booklist-works-number">9</span>
+                    <div class="line"></div>
+                    <span class="booklist-view-number">361</span>
+                </div>
+            </div>
+            <div class="booklist-item">
+                <a href="" title="" target="_blank">
+                    <img src="../images/demo.jpg" alt="">
+                </a>
+                <p class="booklist-item-title">
+                    <a href="" title="" target="_blank">读懂自己，活出高境界的人生</a>
+                </p>
+                <div class="booklist-item-numbers">
+                    <span class="booklist-works-number">9</span>
+                    <div class="line"></div>
+                    <span class="booklist-view-number">361</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">©2020中国知网（CNKI）</div>
+    <script>
+        //判断内容与窗口高度关系
+        var bodyH = $(document.body).height()
+        var winH = $(window).height()
+        if (winH > bodyH || winH == bodyH) {
+            $('.footer').addClass('fixed')
+        } else {
+            $('.footer').removeClass('fixed')
+        }
+    </script>
+</body>
+
+</html>

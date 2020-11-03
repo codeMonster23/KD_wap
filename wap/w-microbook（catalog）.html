@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" type="text/css" href="../css/public.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/wap.css" />
+        <script type="text/javascript" src="../js/flexible.js" ></script>
+        <script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>预览</title> 
+		<script>
+/iPad/i.test(navigator.userAgent)&&(head=document.getElementsByTagName('head'),viewport=document.createElement('meta'),viewport.name='viewport',viewport.content='target-densitydpi=device-dpi, width=480px, user-scalable=no',head.length>0&&head[head.length-1].appendChild(viewport));
+        </script>
+	</head>
+	<body>
+     <!--fixbar-->
+     <a href="#" class="ad1">
+         <p class="p1">看典</p>
+         <p class="p2">让经典精致你的时光</p>
+     </a>
+     <!--fixbar  end-->
+	 <section class="top mbtop">
+	     <img class="face img" src="../images/pic.jpg">
+	     <div class="info">
+	     	<p class="p1">世间理想的生活都离不开一座花园</p>
+	     	<p class="p2">中国青年梦想者提供一个展示个人风采英姿。</p>
+	     	<p class="p3">已更新13篇 | 浏览(5.8k)</p>
+	     	
+	     </div>
+	 </section>
+     <div class="tab"><a href="javascript:;">详情</a><a href="javascript:;"  class="cur">目录</a><a href="javascript:;" class="hot">最热</a></div>	 
+        <section class="tc catalog">
+        <div class="piece clearfix">
+            <a href="#" class="img left"><img src="../images/pic.jpg" ><span class="icon i1"></span></a>
+            <div class="pr">
+                <p>一.文学精品阅读，谁是给最好好的青年梦想者</p>
+                <aside class="clearfix">
+                    <div class="try-label">
+                        <img src="../images/try-look.png" />
+                    </div>
+                    <time>2018/09/30</time>
+                </aside>
+            </div>
+            
+        </div>
+        <div class="piece clearfix">
+            <a href="#" class="img left"><img src="../images/pic.jpg" ><span class="icon i2"></span></a>
+            <div class="pr">
+                <p>一.文学精品阅读，谁是给最好好的青年梦想者</p>
+                <aside  class="clearfix">
+                    <div class="try-label">
+                        <img src="../images/try-listen.png" />
+                    </div>
+                    <time>2018/09/30</time>
+                </aside>
+            </div>            
+        </div>
+        <div class="piece clearfix">
+            <a href="#" class="img left"><img src="../images/pic.jpg" ><span class="icon i3"></span></a>
+            <div class="pr">
+                <p>一.文学精品阅读，谁是给最好好的青年梦想者</p>
+                <aside  class="clearfix">
+                    <div class="try-label">
+                        <img src="../images/try-look.png" />
+                    </div>
+                    <time>2018/09/30</time>
+                </aside>
+            </div>
+            
+        </div>
+        <div class="piece clearfix">
+            <a href="#" class="img left"><img src="../images/pic.jpg" ><span class="icon i4"></span></a>
+            <div class="pr">
+                <p>一.文学精品阅读，谁是给最好好的青年梦想者</p>
+                <aside>
+                    <div class="try-label">
+                        <img src="../images/try-read.png" />
+                    </div>
+                    <time>2018/09/30</time>
+                </aside>
+            </div>
+            
+        </div>
+        <a href="javascript:;" class="more">加载更多&nbsp;<img src="../images/icon5.png" align="absmiddle"></a>
+        <a href="javascript:;" class="more">已全部加载</a>
+    </section> 
+
+
+    <section class="recommend">
+	    <p class="title">精/品/推/荐</p>
+	    <ul class="clearfix">
+	    	<li>
+	    	    <a href="#"><img src="../images/pic.jpg" width="160" height="90"></a>
+	    	    <p><a href="#"><span>【微刊】</span>美食居家在梦想的中一网打尽</a></p>
+	    	</li><li>
+                <a href="#"><img src="../images/pic.jpg" width="160" height="90"></a>
+                <p><a href="#"><span>【微刊】</span>美食居家在梦想的中一网打尽</a></p>
+        </li><li>
+                <a href="#"><img src="../images/pic.jpg" width="160" height="90"></a>
+                <p><a href="#"><span>【微刊】</span>美食居家在梦想的中一网打尽</a></p>
+            </li>
+	    </ul>
+	</section>
+	<div class="s">
+       <a href="javascript:;" class="subscibe">订阅微刊（19.00元）</a> 
+    </div>
+	<script>
+	     //判断内容与窗口高度关系
+         var bodyH=$(document.body).height()
+         var winH=$(window).height()
+         console.log(bodyH,winH)
+         if(winH>bodyH || winH==bodyH){
+             $('.footer').addClass('fixed')
+         }
+         else{
+             $('.footer').removeClass('fixed')
+         }
+//      $(window).scroll(function(){
+//        var height=$(window).scrollTop()
+//        var b1=$("header").height()
+//        var b2=$(window).height()/4
+//        if(height<b1){
+//            $(".ad1").removeClass("fix h")  
+//            $(".ad2").removeClass("h")
+//        }
+//        if(height>b1 && height<b2){
+//            $(".ad1").addClass("fix")
+//            $(".ad1").removeClass("h")
+//            $(".ad2").removeClass("h")
+//            
+//        }
+//        if(height>b2){
+//            $(".ad1").addClass("h")
+//            $(".ad2").addClass("h")
+//            
+//        }
+//      })
+        
+        
+    </script>
+	</body>
+</html>

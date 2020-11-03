@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="../css/public.css" />
+    <script type="text/javascript" src="../js/flexible.js"></script>
+    <script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <title>下载看典客户端</title>
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url('../font/HGDBS_ZW_0.TTF');
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: kaitiFont;
+            src: url('../font/HGKT_ZW.ttf');
+            font-display: swap;
+        }
+        
+        body {
+            background: url("../images/download-bg.jpg")  center 1.547rem no-repeat;
+            background-size: contain, cover;
+        }
+        .ssx-guidebar{
+            width: 10rem;
+            height: 1.547rem;
+            background-color: #3abc22;
+            color: #fff;
+            text-align: center;
+        }
+        .ssx-guidebar h2{
+            line-height: 1;
+            padding: 0.36rem 0 0.125rem;
+            font-size: 0.469rem;
+            font-weight: normal;
+        }
+        .ssx-guidebar p{
+            font-family: kaitiFont;
+            font-size: 0.344rem;
+        }   
+        .logo-container img {
+            width: 1.765625rem;
+            height: 2.171875rem;
+            margin: .65625rem auto .15625rem;
+            display: block;
+        }
+        
+        .subtitle img {
+            width: 5.125rem;
+            height: .421875rem;
+            margin: 0 auto .4375rem;
+            display: block;
+        }
+        
+        .btn-container {
+            padding: 0 0.6rem;
+            margin-bottom: .4625rem;
+        }
+        
+        .btn {
+            background: #d50e0e;
+            border-radius: 0.1rem;
+            color: white;
+            text-align: center;
+            font-size: .46875rem;
+            height: 1.21875rem;
+            line-height: 1.21875rem;
+            display: block;
+        }
+        
+        .btn img {
+            width: .46875rem;
+            height: .46875rem;
+            position: relative;
+            left: -0.1rem;
+            top: 0.02rem;
+        }
+        
+        .icons {
+            display: flex;
+            justify-content: center;
+            height: .65625rem;
+        }
+        
+        .icon img {
+            display: block;
+            width: 2.53125rem;
+            height: .65625rem;
+            margin: 0 0.2rem;
+        }
+        
+        .shadow {
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        
+        .shadow-text {
+            position: fixed;
+            top: 0;
+            right: 0.5rem;
+        }
+        
+        .shadow-text img {
+            width: 6rem;
+        }
+        
+        .main {
+            width: 8.84375rem;
+            padding: .21875rem .21875rem .31875rem;
+            margin: 0 auto .65625rem;
+            background-color: #fff;
+            box-shadow: -0.078125rem -0.03125rem .625rem 0rem rgba(0, 0, 0, 0.17);
+        }
+        
+        .daily-img {
+            position: relative;
+            width: 8.42rem;
+            height: 6.875rem;
+        }
+        
+        .daily-img img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .daily-img .date {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 1.171875rem;
+            height: .953125rem;
+            padding-top: .08rem;
+            border-radius: .078125rem;
+            background: #e60000;
+            color: #fff;
+            text-align: center;
+            font-family: myFirstFont;
+            font-size: .24375rem;
+        }
+        
+        .daily-img .date .num {
+            font-size: .34375rem;
+        }
+        
+        .daily-word {
+            margin-top: .31875rem;
+            padding-left: 1.5rem;
+            padding-top: .1rem;
+            height: 2.171875rem;
+            background: url("../images/daily-word.jpg") left center/1rem 2.171875rem no-repeat;
+            font-size: .4375rem;
+            line-height: .6875rem;
+            font-family: kaitiFont;
+        }
+        /*底部footer*/
+        
+        .footer {
+            width: 100%;
+            height: 0.9375rem;
+            line-height: 0.9375rem;
+            text-align: center;
+            /* margin-top: -0.3593rem; */
+            font-size: 0.28rem;
+            color: #000000;
+        }
+        
+        .footer.fixed {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ssx-guidebar">
+        <h2>赛事星·竞赛考试官方答题APP</h2>
+        <p>学习+答题，助你取得好成绩！</p>
+    </div>
+    <div class="container">
+        <div class="logo-container">
+            <img src="../images/download-logo.png" alt="" class="logo">
+        </div>
+        <div class="subtitle">
+            <img src="../images/download-slogan.png" alt="">
+        </div>
+        <div class="main">
+            <div class="daily-img">
+                <img src="../images/daily-img.jpg" alt="">
+                <div class="date"><span class="num">05.09</span><br>星期六</div>
+            </div>
+            <div class="daily-word">
+                让自己幸福，而不是为了让人羡慕！因为不再相信，所以避免遇到一切美好！矜獒
+            </div>
+        </div>
+        <div class="btn-container">
+            <a href="#" class="btn">
+                <img src="../images/start8.png"> 下载APP
+            </a>
+        </div>
+
+        <div class="icons">
+            <a href="#" class="icon">
+                <img src="../images/start7.png" alt="" class="logo">
+            </a>
+            <a href="#" class="icon icon2">
+                <img src="../images/start6.png" alt="" class="logo">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">©2020中国知网（CNKI）</div>
+</body>
+</html>

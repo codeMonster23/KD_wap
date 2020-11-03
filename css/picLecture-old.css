@@ -1,0 +1,623 @@
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input,textarea{
+    border:none;
+    background: none;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    zoom: 1;
+}
+*{box-sizing: border-box;}
+header{
+    height: 1.15625rem;
+    background: #f57828;
+    color:#fff;
+    font: 0.375rem/1.15625rem "Microsoft Yahei";
+    text-align: center;
+}
+.detail-top{
+    z-index:110;
+}
+header .close{
+    position: absolute;
+    top: 0.390625rem;
+    left: 0.3125rem;
+    width: 0.375rem;
+    height: 0.375rem;
+    background: url("../images/picLecture/icon1.png") no-repeat;
+    background-size: 100%;
+}
+.upload-icon{
+    display: block;
+    width: 3.28125rem;
+    height: 3.28125rem;
+    margin: 2.6875rem auto 0;
+}
+.upload p{
+    font-size: 0.375rem;
+    text-align: center;
+}
+.upload .list{
+    padding: 0.375rem 0 0 0.375rem;
+}
+.upload .list li{
+    position: relative;
+    float: left;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    margin-right: 0.15625rem;
+}
+.upload .list li img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.upload .list li .progress{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 0.46875rem;
+    background: #59bf42;
+    color:#fff;
+    font: 0.28125rem/0.46875rem "Microsoft Yahei";
+    text-align: center;
+}
+.upload .mask{
+    position: absolute;
+    top: 6.71875rem;
+    left:50%;
+    margin-left: -2.20312rem;
+    width: 4.40625rem;
+    height: 1.21875rem;
+    border-radius:4px;
+    background: rgba(0,0,0,.5);
+    color:#fff;
+    font: 0.375rem/1.21875rem "Microsoft Yahei";
+    text-align: center;
+}
+.detail-banner{
+    height: 240px;
+}
+.detail-banner img{
+    height: 100%;
+}
+.detail-banner .play-btn{
+    position: absolute;
+    left:50%;
+    margin-left: -0.859375rem;
+    top:50%;
+    margin-top: -0.71875rem;
+    width: 1.71875rem;
+    height: 1.4375rem;
+    background: url("../images/picLecture/icon3.png") no-repeat;
+    background-size: 100%;
+}
+.detail-banner .badge{
+    position: absolute;
+    right: 0.234375rem;
+    bottom: 0.234375rem;
+    width: 0.59375rem;
+    height: 0.59375rem;
+    background: url("../images/picLecture/icon4.png") no-repeat;
+    background-size: 100%;
+}
+.detail-shopping .collect,.detail-shopping .like{
+    width: 2.5625rem;
+    background-position: 0.5625rem center;
+}
+.detail-shopping .collected {
+    background: url("../images/picLecture/icon17.png") no-repeat 30% center/0.453125rem 0.40625rem; 
+    /* text-indent:0.9rem; */
+}
+.detail-shopping .buy{
+    width: 4.84375rem;
+}
+.detail-shopping .like{
+    background-image: url("../images/picLecture/icon5.png");
+    background-repeat: no-repeat;
+}
+.detail-shopping .like.active{
+    background-image: url("../images/picLecture/icon5-a.png");
+}
+.detail-column {
+    position: relative;
+    height: 2.34375rem;
+    padding: 0.234375rem 0 0 0.3125rem;
+    margin: 0.234375rem 0;
+    background: #fff;
+}
+.detail-column .cover {
+    margin-right: 0.3125rem;
+}
+.detail-column .cover img{
+    width: 1.875rem;
+    height: 1.875rem;
+}
+.detail-column h4 {
+    font-size: 0.28125rem;
+    color:#b4b4b4;
+}
+.detail-column p{
+    font-size: 0.375rem;
+}
+.detail-column .btn{
+    position: absolute;
+    right:0.3125rem;
+    bottom:0.875rem;
+    width: 1.15625rem;
+    height: 0.5625rem;
+    line-height: 0.5625rem;
+    border-radius:4px;
+    background: #ff6905;
+    color:#fff;
+    font-size: 0.28125rem;
+    text-align: center;
+}
+.detail-column .btn.active{
+    background: #b4b4b4;
+}
+.navbar{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    display: flex;
+    height: 1.5625rem;
+    border-top:1px solid #f0f0f0;
+    background: #fff;
+    z-index: 200;
+}
+.navbar a{
+    flex: 1;
+    padding-top: 1.125rem;
+    background: url("../images/picLecture/nav1.png") center 0.09375rem/0.96rem 0.9375rem no-repeat;
+    color:#1e1e1e;
+    text-align: center;
+    font-size: 0.28125rem;
+}
+.navbar a:nth-child(2){
+    background-image:url("../images/picLecture/nav2.png");
+}
+.navbar a:nth-child(3){
+    background-image:url("../images/picLecture/nav3.png");
+}
+.navbar a:nth-child(4){
+    background-image:url("../images/picLecture/nav4.png");
+}
+.navbar a.cur{
+    background-image:url("../images/picLecture/nav1-a.png");
+    color:#ff6905;
+}
+.navbar a:nth-child(2).cur{
+    background-image:url("../images/picLecture/nav2-a.png");
+}
+.navbar a:nth-child(3).cur{
+    background-image:url("../images/picLecture/nav3-a.png");
+}
+.navbar a:nth-child(4).cur{
+    background-image:url("../images/picLecture/nav4-a.png");
+}
+.img-detail-banner{
+    height: 5.46875rem;
+}
+.img-detail-banner img{
+    height: auto;
+}
+.img-detail-banner .info{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 0.78125rem;
+    line-height: 0.78125rem;
+    padding: 0 0.375rem;
+    background: rgba(0,0,0,.5);
+    color:#fff;
+}
+.img-detail-banner .info .name .avatar{
+    display: inline-block;
+    vertical-align: middle;
+    width:0.4375rem;
+    height:0.4375rem;
+    border-radius: 50%;
+}
+.img-detail-banner .info .num span{
+    float: left;
+    height: 100%;
+    padding-left: 0.4rem;
+    margin-left: 0.46875rem;
+    background: url("../images/picLecture/icon7.png") left center/0.25rem no-repeat;
+    text-align: left;
+}
+.img-detail-banner .info .num span:nth-child(2){
+    background-image: url("../images/picLecture/icon8.png");
+    background-size: 0.28125rem 0.1875rem;
+}
+.img-detail-banner .info .num span:last-child{
+    background-image: url("../images/picLecture/icon20.png");
+    background-size: 0.25rem;
+}
+.img-detail-banner .info .num span.active:last-child{
+    background-image: url("../images/picLecture/icon20-a.png");
+}
+.img-detail-top{
+    position: absolute;
+    z-index: 106;
+    background-color:transparent;
+}
+.img-detail-top .music{
+    float: right;
+    width: 0.875rem;
+    height: 0.875rem;
+    margin-right: 0.15625rem;
+    border-radius: 50%;
+    background: rgba(0,0,0,.5);
+}
+.img-detail-top .music::before{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/picLecture/icon6.png") center/0.375rem 0.46875rem no-repeat;
+    animation:rotate 2s infinite linear;
+    
+}
+@keyframes rotate{
+    to{
+        transform:rotate(360deg);
+    }
+}
+.img-detail-top .mute::before{
+    background-image:url("../images/picLecture/icon6-a.png");
+}
+.img-detail{
+    background-color: #fff;
+    padding-top: 0.3125rem;
+}
+.img-detail .title{
+    font-size: 0.375rem;
+    color: #333;
+    margin-left: 0.25rem;
+    line-height: 0.375rem;
+}
+.img-detail .list {
+    border-top:0;
+    margin-top: 0;
+    padding-left:0.25rem;
+}
+.img-detail .list ul{
+    padding-right: 0.25rem;
+    overflow: hidden;
+}
+.img-detail .list li{
+    position: relative;
+    float: left;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+.img-detail .list li.cur{
+    border:2px solid #ff6905;
+}
+.img-detail a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.img-detail-col1 li{
+    width: 100%;
+    height: 6.34375rem;
+    margin-bottom: 0.12rem;
+}
+.img-detail-col2 li{
+    width: 4.69rem;
+    height: 3.125rem;
+    margin-right: 0.12rem;
+    margin-bottom: 0.12rem;
+}
+.img-detail-col3 li{
+    width: 3.087rem;
+    height: 2.03125rem;
+    margin-right: 0.12rem;
+    margin-bottom: 0.12rem;
+}   
+.img-detail-col2 li:nth-child(even){
+    margin-right: 0;
+}
+.img-detail-col3 li:nth-child(3n){
+    margin-right: 0;
+}
+.img-detail-nogroup{
+    padding-top: 0;
+}
+.topbar {
+    position: absolute;
+    top:0.25rem;
+    width: 100%;
+    padding: 0 0.15625rem 0 0.3125rem;
+    z-index: 10;
+}
+.topbar span{
+    float: left;
+    width: 0.9375rem;
+    height: 0.9375rem;
+    margin-right: 0.25rem;
+    border-radius: 50%;
+    background:rgba(0,0,0,.5) url("../images/picLecture/icon9.png") center/100%  no-repeat;
+}
+.topbar span.mute{
+    background-image: url("../images/picLecture/icon9-a.png");
+}
+.topbar span:nth-child(2){
+    background-image:url("../images/picLecture/icon10.png");
+}
+.topbar span:nth-child(3){
+    background-image:url("../images/picLecture/icon11.png");
+}
+.topbar span:nth-child(4){
+    float: right;
+    width: 2.71875rem;
+    height: 0.65625rem;
+    line-height: 0.65625rem;
+    margin:0;
+    border:1px solid #787878;
+    border-radius: 5px;
+    text-align: center;
+    background: rgba(0,0,0,.5);
+    color:#fefefe;
+    font-size:0.28rem;
+}
+.topbar span:nth-child(4).progress::after{
+    content:"";
+    position: absolute;
+    right:0.35rem;
+    top:0.21875rem;
+    width: 0.21875rem;
+    height: 0.21875rem;
+    background:url("../images/picLecture/icon19.png") center/100% no-repeat;
+}
+.group-list{
+   position: fixed;
+   top:0;
+   right:0;
+   width: 5.2rem;
+   height: 100%;
+   padding-top: 0.1875rem;
+   background: rgba(0,0,0,.5);
+   z-index: 10;
+}
+.group-list li{
+    line-height: 1.09375rem;
+    margin-left: 0.375rem;
+    padding-left: 0.8125rem;
+    background: url("../images/picLecture/icon7.png") left center/0.5rem no-repeat;
+}
+.group-list li a{
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #fff;
+    font-size: 0.375rem;
+}
+.swiper1{
+    position: absolute;
+    width: 100%;
+    height: 100% !important;
+    color:#fff;
+}
+.swiper-container img{
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.swiper-pagination{
+    position: fixed;
+    bottom:0 !important;
+    line-height: 0.65625rem;
+    padding: 0 0.375rem 0.1rem;
+    background: rgba(0,0,0,.5);
+    text-align: left;
+    font-size: 13px !important;
+    color:#fff;
+    z-index: 1000;
+}
+.topbar-h{
+    position: absolute;
+    top:0.28125rem;
+    width: 100%;
+    padding-top: 0;
+    z-index: 5;
+}
+.topbar-h span{
+    background-color:rgba(0,0,0,.5);
+}
+.topbar-h span:nth-child(4) {
+    background-image: url(../images/picLecture/icon12.png);
+}
+.swiper-container-h{
+    top:0;
+}
+.group-list-h{
+    width: 4.6875rem;
+    height: 10rem;
+}
+.group-list-h li{
+    line-height: 0.71875rem;
+    background-size: 0.328125rem;
+}
+.group-list-h li a{
+    font-size: 0.3125rem;
+}
+.swiper-slide{
+    overflow: hidden;
+}
+.group-cover{
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    color:#000;
+}
+.group-cover .content{
+    width: 8.5rem;
+    margin:0 auto;
+    background: url("../images/picLecture/line.png") center 0.2rem/8.09375rem 0.03125rem no-repeat;
+}
+.group-cover .title{
+    padding-top:1rem;
+    font-size: 0.4rem;
+}
+.group-cover .intro{
+    width: 4.7rem;
+    /* height: 2.36rem; */
+    margin:0.8rem 0 0 0.1875rem;
+    line-height: 0.46875rem;
+    font-size: 0.26rem;
+    text-align: left;
+}
+.group-cover .intro p{
+    margin: 0;
+}
+.group-cover .intro .desc{
+    height: 1.8rem;
+    margin:-0.18rem 0 0.1rem;
+    overflow: hidden;
+}
+.swiper-container .group-cover .title{
+    padding:1rem 1rem 0;
+    text-align: center;
+}
+.group-cover .cover{
+    width: 3.21875rem;
+    height: 2.375rem;
+    margin-top:0.46875rem;
+    background: url("../images/picLecture/cover.png") center/100%  no-repeat;
+}
+.group-cover .cover img{
+    display: block;
+    width: 2.8125rem;
+    height: 1.875rem;
+    margin-left: 0.25rem;
+    margin-top: 0.40625rem;
+}
+.detail-banner .cover-bg{
+    height: 100%;
+}
+.groupCover{
+    position: absolute;
+    top: 3.125rem;
+    width: 100%;
+    height:6.90625rem;
+    background: url("../images/picLecture/group-cover1.jpg") center/100% no-repeat;
+    text-align: center;
+    font-size:0.4rem;
+}
+.groupCover2{
+    background-image: url("../images/picLecture/group-cover2.jpg");
+    color:#fff;
+}
+.groupCover .title,.groupCover input{
+    width: 70%;
+    margin:1.96875rem auto 0;
+    font-size:0.6rem;
+    font-weight: bold;
+    color:#ff6905;
+    text-align: center; 
+}
+.groupCover2 .title,.groupCover2 input{
+    color:#fff;
+}
+.groupCover .desc,.groupCover textarea{
+    width: 70%;
+    margin:0.625rem auto 0;
+}
+.groupCover textarea{
+    height: 2.5rem;
+    color:#000;
+}
+.groupCover2 textarea{
+    color:#fff;
+}
+textarea::-webkit-input-placeholder {
+    color: #000;
+    text-align: center;
+}
+.groupCover2 textarea::-webkit-input-placeholder {
+    color: #fff;
+}
+.mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.modal {
+    position: fixed;
+    left: 50%;
+    margin-left: -3.46875rem;
+    top: 50%;
+    margin-top: -1.96875rem;
+    width: 6.9375rem;
+    height: 3.9375rem;
+    border-radius: 5px;
+    font-size: 0.40625rem;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+}
+.modal .close{
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    width: 0.34375rem;
+    height: 0.34375rem;
+    background: url(../images/picLecture/icon22.png) center/100%  no-repeat;
+}
+.modal p {
+    margin: 1.0625rem 0 0.75rem;
+}
+.modal .btnGroup {
+    text-align: center;
+    font-size: 0;
+}
+.modal .btnGroup a {
+    display: inline-block;
+    width: 2.75rem;
+    height: 0.9375rem;
+    line-height: 0.9375rem;
+    margin: 0 0.1875rem;
+    border-radius: 5px;
+    background: #4f9e29;
+    color: #fff;
+    font-size: 0.375rem;
+}
+.modal .btnGroup .btn2 {
+    background: #f36100;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>图片浏览</title>
+    <link href="../css/normalize.css" rel="stylesheet">
+    <link href="../lib/swiper/swiper.min.css" rel="stylesheet">
+    <link href="../css/picLecture.css" rel="stylesheet">
+    <script src="../js/flexible.js"></script>
+    <script src="../lib/swiper/swiper.min.js"></script>
+</head>
+<body bgcolor="#1e1e1e" style="position:relative;">
+    <div class="group-list">
+        <ul>
+            <li><a href="">小一班绘画作品小一班绘画作品小一班绘画作品小一班绘画作品</a></li>
+            <li><a href="">小一班绘画作品</a></li>
+            <li><a href="">小一班绘画作品</a></li>
+            <li><a href="">小一班绘画作品</a></li>
+            <li><a href="">小一班绘画作品</a></li>
+            <li><a href="">小一班绘画作品</a></li>
+        </ul>
+    </div>
+    <div class="swiper-container swiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../images/picLecture/pic1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/picLecture/pic2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/picLecture/pic3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/picLecture/pic4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/picLecture/pic5.jpg" alt=""></div>
+        </div>
+    </div>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+            renderFraction: function (currentClass, totalClass) {
+            return '<div class="left num"><span class="' + currentClass + '"></span>' +' / ' +'<span class="' + totalClass + '"></span></div>'+'<span class="desc">《海燕》又名《海燕之歌》，是高尔基创作的一篇著名  散文诗。海燕在暴风雨来临之前，常在海面上飞翔。因此，在俄文里，“海燕”一词含有“暴风雨的预言者”之意。此文按海面景象的发展变化分成三部分，描绘了海燕面临狂风暴雨和波涛翻腾的大海时的壮丽场景。</span>'
+            }
+        }
+    });
+    </script>
+</body>
+</html>

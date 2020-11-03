@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" type="text/css" href="../css/public.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/wap.css" />
+        <script type="text/javascript" src="../js/flexible.js" ></script>
+        <script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>预览</title>
+		<script>
+/iPad/i.test(navigator.userAgent)&&(head=document.getElementsByTagName('head'),viewport=document.createElement('meta'),viewport.name='viewport',viewport.content='target-densitydpi=device-dpi, width=480px, user-scalable=no',head.length>0&&head[head.length-1].appendChild(viewport));
+        </script>
+	</head>
+	<body> 
+
+	 <!--fixbar-->
+	 <a href="#" class="ad1"><img src="../images/wad1.png"></a>
+	 <a href="#" class="ad2"><img src="../images/wad3.png"></a>
+	 <!--fixbar  end-->
+	 <section class="top vetop">
+	    <div class="galleryWrap">
+         <!--背景模块图片与img一致-->
+         <!--<div class="galleryImg"></div>-->
+         <!--背景遮罩-->
+         <!--<div class="coverShade"></div>-->	     
+         <div class="fk">
+           <img class="face" src="../images/test.jpg">
+           <a href="javascript:;" class="btn"></a>  
+         </div>
+         <div class="info">
+            <p class="p1">世间理想的生活都离不开一座花园一座花园一座花园</p>
+            <p class="p3">朱德庸 | 250次播放</p>
+         </div>
+        </div> 
+	 </section>
+	 <section class="intro">
+	    <div class="wrap">
+	     <h2>详情</h2>
+	     <p>卡耐基堪称西方社交技巧教育奠基人，是20世纪伟大的心灵导师和成功学大师。《人性的弱点》更可说是20世纪各类心理励志书的始祖，出版80年仍攻占亚马逊心理励志畅销榜，足以验证其实用性。</p>
+	     <p>很难想象，每年都在公司股东大会上，面对数万名股东侃侃而谈经营方针股神巴菲特，年轻时非常害怕公开演说他在自传中这样描述自己：“事实</p>
+	     <img src="../images/pic.jpg"  width="100%"/>
+	     <p>卡耐基堪称西方社交技巧教育奠基人，是20世纪伟大的心灵导师和成功学大师。《人性的弱点》更可说是20世纪各类心理励志书的始祖，出版80年仍攻占亚马逊心理励志畅销榜，足以验证其实用性。 </p>
+	     <p>卡耐基堪称西方社交技巧教育奠基人，是20世纪伟大的心灵导师和成功学大师。《人性的弱点》更可说是20世纪各类心理励志书的始祖，出版80年仍攻占亚马逊心理励志畅销榜，足以验证其实用性。 </p>
+        <a href="#" class="recBook">
+            <img src="../images/booktemp.jpg"/>
+            <div class="details">
+                <p class="p1">天下半小时漫画唐诗(1-3册)理解决解唐诗的原意与深意</p>
+                <p class="p2">陈磊 著</p>
+                <p class="p3">中国青年出版社</p>
+                <span>阅 读</span>
+            </div>
+         </a>          
+      </div>
+	 </section>
+	 <a href="#" class="xx">
+	     <img src="../images/pic.jpg">
+	     <span>
+	       <p class="p1">微刊</p>  
+	       <p class="p2">世间理想的生活都离不开一座花园</p>
+	     </span>
+	 </a>
+
+   <section class="recommend">
+	    <p class="title">精/品/推/荐</p>
+	    <ul class="clearfix">
+	    	<li>
+	    	    <a href="#"><img src="../images/pic.jpg" ></a>
+	    	    <p><a href="#">美食居家在梦想的中一网打尽打尽</a></p>
+	    	</li><li>
+                <a href="#"><img src="../images/pic.jpg" ></a>
+                <p><a href="#">美食居家在梦想的中一网打尽打尽</a></p>
+        </li><li>
+                <a href="#"><img src="../images/pic.jpg"></a>
+                <p><a href="#">美食居家在梦想的中一网打尽打尽</a></p>
+            </li>
+	    </ul>
+	</section>
+	<script>
+	    $(window).scroll(function(){
+	      var height=$(window).scrollTop()
+	      var b1=$("header").height()
+	      var b2=$(window).height()/4
+	      if(height<b1){
+	          $(".ad1").removeClass("fix h")  
+	          $(".ad2").removeClass("h")
+	      }
+	      if(height>b1 && height<b2){
+	          $(".ad1").addClass("fix")
+	          $(".ad1").removeClass("h")
+	          $(".ad2").removeClass("h")
+	          
+	      }
+	      if(height>b2){
+	          $(".ad1").addClass("h")
+	          $(".ad2").addClass("h")
+	          
+	      }
+	    })
+	    
+	    
+	</script>
+	</body>
+</html>

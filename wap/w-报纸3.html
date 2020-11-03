@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" type="text/css" href="../css/public.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/wap.css" />
+        <link rel="stylesheet" type="text/css" href="../css/wap-select-day.css" />
+        <script type="text/javascript" src="../js/flexible.js" ></script>
+        <script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>预览</title> 
+		<script>
+/iPad/i.test(navigator.userAgent)&&(head=document.getElementsByTagName('head'),viewport=document.createElement('meta'),viewport.name='viewport',viewport.content='target-densitydpi=device-dpi, width=480px, user-scalable=no',head.length>0&&head[head.length-1].appendChild(viewport));
+        </script>
+	</head>
+	<body>
+        <!--fixbar-->
+    <a href="#" class="ad1"><img src="../images/wad1.png"></a>
+    <!-- <a href="#" class="ad2"><img src="../images/wad3.png"></a> -->
+    <!--banner-->
+    <div class="new2-nav">
+        <a class="news2-nav-left">
+            <img class="news-nav-arrow" src="../images/icon1.png" alt="" />
+        </a>
+        <div class="news-nav-text">人民日报</div>
+    </div>
+    <a class="news2-top">
+        <img src="http://via.placeholder.com/40x30" alt="" class="news-logo">
+        <div class="news-banner-infos">
+            <div class="news-banner-info">主办：中国共产党中央委员会</div>
+            <div class="news-banner-info">出版地：北京市</div>
+            <div class="news-banner-info">出版周期：日报</div>
+        </div>
+    </a>
+	<div class="news2-banner">
+        <a href="#" class="news2-nav-arrow"><</a>
+        <a href="#" class="news2-nav-date">
+            2020年6月5日 星期五  
+            <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 16l-6-6h12z" fill="rgba(255,255,255,1)"/></svg></i>
+        </a>
+        <a href="#" class="news2-nav-arrow">></a>
+    </div>
+    <!-- 点了日期区域之后，会触发下面这个不显示的input表单，然后在手机上显示日期选择框 -->
+    <input class="input-hidden" type="date" defaultValue="2020/6/28" />
+    <div class="news2-banner2"></div>
+    <div class="news-date">
+        <div class="year">
+            <div class="year-item">2006年</div>
+            <div class="year-item">2007年</div>
+            <div class="year-item">2008年</div>
+            <div class="year-item year-item-selected">2009年</div>
+            <div class="year-item">2010年</div>
+            <div class="year-item">2011年</div>
+            <div class="year-item">2012年</div>
+            <div class="year-item">2013年</div>
+            <div class="year-item">2014年</div>
+            <div class="year-item">2015年</div>
+            <div class="year-item">2016年</div>
+            <div class="year-item">2017年</div>
+            <div class="year-item">2018年</div>
+            <div class="year-item">2019年</div>
+            <div class="year-item">2020年</div>
+        </div>
+        <div class="m-block">
+            <div class="month">
+                <div class="month-title">七月</div>
+                <div class="day-block">
+                    <a href="javascript:;" class="day-item">7月1日</a>
+                    <a href="javascript:;" class="day-item">7月2日</a>
+                    <a href="javascript:;" class="day-item">7月3日</a>
+                    <a href="javascript:;" class="day-item">7月4日</a>
+                    <a href="javascript:;" class="day-item">7月5日</a>
+                    <a href="javascript:;" class="day-item">7月6日</a>
+                </div>
+            </div>
+            <div class="month">
+                <div class="month-title">八月</div>
+                <div class="day-block">
+                    <a href="javascript:;" class="day-item">8月1日</a>
+                    <a href="javascript:;" class="day-item">8月2日</a>
+                    <a href="javascript:;" class="day-item">8月3日</a>
+                    <a href="javascript:;" class="day-item">8月4日</a>
+                    <a href="javascript:;" class="day-item">8月5日</a>
+                    <a href="javascript:;" class="day-item">8月6日</a>
+                </div>
+            </div>
+            <div class="month">
+                <div class="month-title">九月</div>
+                <div class="day-block">
+                    <a href="javascript:;" class="day-item">9月1日</a>
+                    <a href="javascript:;" class="day-item">9月2日</a>
+                    <a href="javascript:;" class="day-item">9月3日</a>
+                    <a href="javascript:;" class="day-item">9月4日</a>
+                    <a href="javascript:;" class="day-item">9月5日</a>
+                    <a href="javascript:;" class="day-item">9月6日</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="wx-suggest-end wx-suggest-end-mini">-->
+        <!--<div class="wx-suggest-line"></div>-->
+        <!--<div class="wx-suggest-text">已全部加载</div>-->
+        <!--<div class="wx-suggest-line"></div>-->
+    <!--</div>-->
+
+	<script>
+        $(window).scroll(function(){
+          var height=$(window).scrollTop()
+          var b1=$("header").height()
+          var b2=$(window).height()/4
+          if(height<b1){
+              $(".ad1").removeClass("fix h")  
+              $(".ad2").removeClass("h")
+          }
+          if(height>b1 && height<b2){
+              $(".ad1").addClass("fix")
+              $(".ad1").removeClass("h")
+              $(".ad2").removeClass("h")
+              
+          }
+          if(height>b2){
+              $(".ad1").addClass("h")
+              $(".ad2").addClass("h")
+              
+          }
+        })
+        //点了日期区域之后，会触发那个不显示的input表单，然后在手机上显示日期选择框
+        $('.news2-nav-date').on('click',function(){
+            $(".input-hidden").trigger("click");
+        })
+        
+    </script>
+	</body>
+</html>

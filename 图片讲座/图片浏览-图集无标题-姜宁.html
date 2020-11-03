@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>图片浏览</title>
+    <link href="../css/normalize.css" rel="stylesheet">
+    <link href="../css/jtwap2.css" rel="stylesheet">
+    <link href="../css/picLecture.css" rel="stylesheet">
+    <script src="../js/flexible.js"></script>
+</head>
+<body style="padding-bottom:0.6rem">
+    <div class="detail-top img-detail-top img-detail-top2" >
+        <a href="#" class="back"></a>
+        <a href="#" class="top-text">北京市第二中学最美的插画欣赏</a>
+         <!-- 有music-top这个class的时候，图标是停止音乐图表，去掉这个class 图标是运行图标 -->
+        <a href="#" class="music music-stop"></a>
+    </div>
+
+    <!-- 和有分组的区别就是加了个class img-detail-clean -->
+    <div class="img-detail img-detail-col2 img-detail-clean" >
+        <div class="list">
+            <ul>
+                <li class="cur">
+                    <a href=""><img src="../images/picLecture/pic1.jpg" alt="">
+                        <div class="text-block">
+                            <div class="text-title">
+                                小一班绘画作品
+                            </div>
+                            <div class="text-body">
+                                输入分组描述输入分组描述输入分组描述输入分组描述输入分组描述     
+                                输入分组描述输入分组描述输入分组描述输入分组描述输入分组描述描述
+                            </div>
+                        </div>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href=""><img src="../images/picLecture/pic2.jpg" alt="">
+                        <div class="text-block">
+                            <div class="text-title">
+                        
+                            </div>
+                            <div class="text-body">
+                   
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="../images/picLecture/pic3.jpg" alt="">
+                        <div class="text-block">
+                            <div class="text-title">
+                   
+                            </div>
+                            <div class="text-body">
+                         
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="../images/picLecture/pic4.jpg" alt="">
+                        <div class="text-block">
+                            <div class="text-title">
+                          
+                            </div>
+                            <div class="text-body">
+                         
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="../images/picLecture/pic4.jpg" alt="">
+                        <div class="text-block">
+                            <div class="text-title">
+           
+                            </div>
+                            <div class="text-body">
+ 
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="../images/picLecture/pic4.jpg" alt="">
+                        <div class="text-block">
+                            <div class="text-title">
+    
+                            </div>
+                            <div class="text-body">
+
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="../images/picLecture/pic4.jpg" alt="">
+                        <div class="text-block">
+                            <div class="text-title">
+                        
+                            </div>
+                            <div class="text-body">
+   
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="../images/picLecture/pic4.jpg" alt="">
+                        <div class="text-block">
+                            <div class="text-title">
+    
+                            </div>
+                            <div class="text-body">
+                     
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script>
+        $('.img-detail li').each(function(){
+            var liWidth = $(this).width();
+            var liHeight= $(this).height();
+            var img = $(this).find('img');
+            var imgWidth = img.width();
+            var imgHeight = img.height();
+            if(imgWidth>imgHeight){
+                img.css({'width':'auto','height':'100%'})
+                imgWidth = img.width();
+                img.css({'margin-left':-(imgWidth-liWidth)/2})
+            }else{
+                img.css({'width':'100%','height':'auto'})
+                imgHeight = img.height();
+                img.css({'margin-top':-(imgHeight-liHeight)/2})
+            }
+        })
+        $('.music').click(function(){
+            $(this).toggleClass("music-stop");
+        })
+    </script>
+</body>
+</html>
